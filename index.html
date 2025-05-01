@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私のポートフォリオ</title>
+    <style>
+        body {
+            font-family: serif; /* 古風な印象を与えるフォント */
+            background-color: #f0e6d2; /* 薄い茶色 */
+            color: #333; /* 少し濃いめのグレーに近い黒 */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #a0522d; /* 茶色 */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff8dc; /* より薄い茶色 */
+            border: 1px solid #a0522d; /* 茶色の枠線 */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 控えめな影 */
+        }
+
+        h1, h2, h3 {
+            color: #a0522d; /* 茶色 */
+            margin-bottom: 10px;
+        }
+
+        .profile p, .recent-activity li, .projects li {
+            margin-bottom: 15px;
+            padding-left: 1em;
+            text-indent: -1em; /* 行頭を少し下げる */
+        }
+
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .project-item {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #f9f9f9; /* 薄いグレー */
+        }
+
+        .project-item h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333; /* 黒 */
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>私のポートフォリオサイト</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">このサイトについて</a></li>
+                <li><a href="#works">活動一覧</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" id="home">
+        <section class="title">
+            <h2>ようこそ</h2>
+            <p>Webデザイナーの[あなたの名前]です。</p>
+        </section>
+
+        <section class="profile">
+            <h2>プロフィール</h2>
+            <p>長年のWebデザイン経験を活かし、使いやすく、そしてどこか懐かしい温かみのあるウェブサイト制作を心がけています。[あなたのスキルや得意な分野などを記述]</p>
+            <p>[職務経歴や資格などがあれば追記]</p>
+        </section>
+
+        <section class="recent-activity">
+            <h2>最近の活動</h2>
+            <ul>
+                <li>[YYYY年MM月DD日] - [最近の活動内容1]</li>
+                <li>[YYYY年MM月DD日] - [最近の活動内容2]</li>
+                <li>[YYYY年MM月DD日] - [最近の活動内容3]</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>現在のプロジェクト</h2>
+            <ul>
+                <li class="project-item">
+                    <h3>[プロジェクト名1]</h3>
+                    <p>[プロジェクトの簡単な説明]</p>
+                    <p>担当：[あなたの担当]</p>
+                    <p>進捗：[進捗状況]</p>
+                </li>
+                <li class="project-item">
+                    <h3>[プロジェクト名2]</h3>
+                    <p>[プロジェクトの簡単な説明]</p>
+                    <p>担当：[あなたの担当]</p>
+                    <p>進捗：[進捗状況]</p>
+                </li>
+                </ul>
+        </section>
+    </div>
+
+    <div class="container" id="about" style="display: none;">
+        <section>
+            <h2>このサイトについて</h2>
+            <p>このポートフォリオサイトでは、私のこれまでの活動や制作実績、そして現在取り組んでいるプロジェクトについてご紹介しています。古き良きデザインの中に、新しい技術を取り入れ、皆様にとって価値のある情報を提供できるよう努めてまいります。</p>
+            <p>[このサイトに関するさらに詳しい説明]</p>
+        </section>
+    </div>
+
+    <div class="container" id="works" style="display: none;">
+        <section>
+            <h2>活動一覧</h2>
+            <p>これまでに手掛けたウェブサイトやデザインワークの一覧です。</p>
+            <ul>
+                <li>[プロジェクト名] - [簡単な説明] ([使用技術])</li>
+                <li>[プロジェクト名] - [簡単な説明] ([使用技術])</li>
+                </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; [あなたの名前] All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav a');
+            const containers = document.querySelectorAll('.container');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+
+                    containers.forEach(container => {
+                        container.style.display = 'none';
+                    });
+
+                    const targetContainer = document.getElementById(targetId);
+                    if (targetContainer) {
+                        targetContainer.style.display = 'block';
+                    }
+                });
+            });
+
+            // 初期表示でホームを表示
+            document.getElementById('home').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
