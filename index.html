@@ -116,6 +116,20 @@
             color: #fff;
             width: 100%;
         }
+
+        .recent-activity li {
+            margin-bottom: 20px;
+            padding-left: 0; /* 不要になったので削除 */
+            text-indent: 0; /* 不要になったので削除 */
+            font-size: 1.1em;
+            display: flex; /* Flexboxを指定 */
+            align-items: flex-start; /* 上揃え */
+        }
+
+        .recent-activity li iframe {
+            margin-left: 1em; /* 動画とテキストの間にスペースを作る */
+        }
+        
     </style>
 </head>
 <body>
@@ -138,7 +152,7 @@
 
         <section class="profile">
             <h2>プロフィール</h2>
-            <img src="https://github.com/user-attachments/assets/25b0448d-fa1c-4282-8e6f-99a14dfc7318" alt="ドンキーと私" style="display: block; margin-bottom: 5px; width: 400px; height: 400px; border-radius: 80%; margin-left: auto; margin-right: auto;">
+            <img src="https://github.com/user-attachments/assets/25b0448d-fa1c-4282-8e6f-99a14dfc7318" alt="ドンキーと私" style="display: block; margin-bottom: 5px; width: auto; height: 400px; border-radius: 80%; margin-left: auto; margin-right: auto;">
              <p style="text-align: center;">Geminiが助けてくれました</p>
              <p style="text-align: center;">AI有能すぎる</p>
         </section>
