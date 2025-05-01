@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>れんたろうのポートフォリオ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: serif; /* 古風な印象を与えるフォント */
-            background-color: #f0e6d2; /* 薄い茶色 */
-            color: #333; /* 少し濃いめのグレーに近い黒 */
+            font-family: 'Noto Sans JP', sans-serif; /* フォントを変更 */
+            font-size: 16px; /* 基本のフォントサイズを大きく */
+            background-color: #f0e6d2;
+            color: #333;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.7; /* 行間を少し広げて読みやすく */
         }
 
         header {
-            background-color: #a0522d; /* 茶色 */
+            background-color: #a0522d;
             color: #fff;
-            padding: 20px 0;
+            padding: 25px 0; /* 少し上下のpaddingを大きく */
             text-align: center;
         }
 
@@ -30,32 +34,48 @@
         }
 
         nav li {
-            margin: 0 20px;
+            margin: 0 25px; /* 左右のmarginを少し大きく */
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
+            font-size: 1.1em; /* ナビゲーションリンクの文字を少し大きく */
+            font-weight: bold; /* 少し太く */
         }
 
         .container {
             max-width: 960px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff8dc; /* より薄い茶色 */
-            border: 1px solid #a0522d; /* 茶色の枠線 */
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 控えめな影 */
+            margin: 30px auto; /* 上下のmarginを少し大きく */
+            padding: 25px; /* paddingを少し大きく */
+            background-color: #fff8dc;
+            border: 1px solid #a0522d;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         h1, h2, h3 {
-            color: #a0522d; /* 茶色 */
-            margin-bottom: 10px;
+            color: #a0522d;
+            margin-bottom: 15px; /* margin-bottomを少し大きく */
+            font-weight: 700; /* 少し太めのウェイトを指定 */
+        }
+
+        h1 {
+            font-size: 2.5em; /* h1をさらに大きく */
+        }
+
+        h2 {
+            font-size: 2em; /* h2を大きく */
+        }
+
+        h3 {
+            font-size: 1.5em; /* h3を少し大きく */
         }
 
         .profile p, .recent-activity li, .projects li {
-            margin-bottom: 15px;
-            padding-left: 1em;
-            text-indent: -1em; /* 行頭を少し下げる */
+            margin-bottom: 20px; /* margin-bottomを少し大きく */
+            padding-left: 1.2em; /* padding-leftを少し調整 */
+            text-indent: -1.2em; /* text-indentを少し調整 */
+            font-size: 1.1em; /* 段落などの文字を少し大きく */
         }
 
         .projects ul {
@@ -65,29 +85,34 @@
 
         .project-item {
             border: 1px solid #ccc;
-            padding: 15px;
-            margin-bottom: 15px;
-            background-color: #f9f9f9; /* 薄いグレー */
+            padding: 20px; /* paddingを少し大きく */
+            margin-bottom: 20px; /* margin-bottomを少し大きく */
+            background-color: #f9f9f9;
         }
 
         .project-item h3 {
             margin-top: 0;
         }
 
+        .project-item p {
+            font-size: 1em; /* プロジェクト詳細の文字サイズも調整 */
+        }
+
         footer {
             text-align: center;
-            padding: 10px 0;
-            background-color: #333; /* 黒 */
+            padding: 15px 0; /* paddingを少し大きく */
+            background-color: #333;
             color: #fff;
             position: fixed;
             bottom: 0;
             width: 100%;
+            font-size: 0.9em; /* フッターの文字は少し小さく */
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>れんたろうのポートフォリオ</h1>
+        <h1>はすをポートフォリオ</h1>
         <nav>
             <ul>
                 <li><a href="#home">ホーム</a></li>
@@ -99,14 +124,14 @@
 
     <div class="container" id="home">
         <section class="title">
-            <h2>お元気ですか</h2>
-            <p>れんたろうです。</p>
+            <h2>どうも</h2>
+            <p>Webれんたろうです。</p>
         </section>
 
         <section class="profile">
             <h2>プロフィール</h2>
-            <p>どうも</p>
-            <p>私は元気です</p>
+            <p>Geminiが助けてくれました</p>
+            <p>AI有能すぎる</p>
         </section>
 
         <section class="recent-activity">
@@ -140,15 +165,15 @@
     <div class="container" id="about" style="display: none;">
         <section>
             <h2>このサイトについて</h2>
-            <p>このポートフォリオサイトでは、私のこれまでの活動や制作実績、そして現在取り組んでいるプロジェクトについてご紹介しています。</p>
-            <p>[このサイトに関するさらに詳しい説明]</p>
+            <p>このポートフォリオサイトでは、私のこれまでの活動や制作実績についてまとめたいです</p>
+            <p>果たして追加されるのか</p>
         </section>
     </div>
 
     <div class="container" id="works" style="display: none;">
         <section>
             <h2>活動一覧</h2>
-            <p>これまでのゼミでの活動</p>
+            <p>これまでのゼミ活動です</p>
             <ul>
                 <li>[プロジェクト名] - [簡単な説明] ([使用技術])</li>
                 <li>[プロジェクト名] - [簡単な説明] ([使用技術])</li>
