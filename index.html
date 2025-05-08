@@ -1,52 +1,120 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ポートフォリオ - あなたの名前</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <!-- ヒーローセクション -->
-  <header class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 to-purple-500 text-white">
-    <div class="text-center px-4">
-      <h1 class="text-5xl font-bold mb-4">こんにちは、<span class="underline decoration-white">あなたの名前</span>です</h1>
-      <p class="text-xl mb-6">フロントエンド開発者・UIデザイナー</p>
-      <a href="#projects" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">プロジェクトを見る</a>
-    </div>
-  </header>
-
-  <!-- 自己紹介 -->
-  <section class="max-w-4xl mx-auto py-20 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-6">自己紹介</h2>
-    <p class="text-lg leading-relaxed text-gray-600">
-      Web制作・フロントエンド開発を中心に活動しています。ReactやNext.jsを使ったSPA開発が得意で、UI/UXにもこだわっています。
-    </p>
-  </section>
-
-  <!-- プロジェクト -->
-  <section id="projects" class="bg-white py-20 px-4">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-12">プロジェクト</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">プロジェクト名 A</h3>
-          <p class="text-gray-600 mb-2">React + Firebaseで構築したTODOアプリ。</p>
-          <a href="#" class="text-indigo-600 font-medium hover:underline">詳細を見る</a>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">プロジェクト名 B</h3>
-          <p class="text-gray-600 mb-2">Next.jsとmicroCMSを活用したブログサイト。</p>
-          <a href="#" class="text-indigo-600 font-medium hover:underline">詳細を見る</a>
-        </div>
-        <!-- 追加可能 -->
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- フッター -->
-  <footer class="text-center py-10 text-sm text-gray-500">
-    © 2025 あなたの名前. All rights reserved.
-  </footer>
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm Your Name</h1>
+                <p>A passionate [Your Profession] creating awesome things.</p>
+                <a href="#works" class="button">View My Works</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-image">
+                    <img src="images/profile.jpg" alt="Your Profile Image">
+                </div>
+                <div class="profile-text">
+                    <p>自己紹介文が入ります。あなたのスキルや経験、興味などを簡潔に記述します。読み手があなたについてより深く理解できるように、具体的なエピソードや実績を交えると効果的です。</p>
+                    <p>さらに詳しい情報や、あなたの強みなどを追加で記述します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="works">
+        <div class="container">
+            <h2>Works</h2>
+            <div class="works-grid">
+                <div class="work-item">
+                    <img src="images/work1.jpg" alt="Work 1">
+                    <h3>Project Title 1</h3>
+                    <p>Short description of the project.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="work-item">
+                    <img src="images/work2.jpg" alt="Work 2">
+                    <h3>Project Title 2</h3>
+                    <p>Short description of the project.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="work-item">
+                    <img src="images/work3.jpg" alt="Work 3">
+                    <h3>Project Title 3</h3>
+                    <p>Short description of the project.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>お気軽にご連絡ください。</p>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript (必要に応じて追加)
+    </script>
 </body>
 </html>
