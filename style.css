@@ -290,7 +290,7 @@ footer .container {
 }
 
 /* レスポンシブデザイン */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     header .container {
         flex-direction: column;
         align-items: flex-start;
@@ -321,5 +321,5 @@ footer .container {
 
     .skills-list ul {
         justify-content: flex-start;
-    }
+    }*/
 }
