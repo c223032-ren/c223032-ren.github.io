@@ -1,337 +1,346 @@
+:root {
+   --primary-color: #8e44ad; /* メインの紫 */
+   --secondary-color: #a95cc2; /* アクセントの紫 */
+   --background-color: #f8f8f8; /* 明るい背景色 */
+   --text-color: #333; /* 基本の文字色 */
+   --light-text-color: #555; /* 少し薄い文字色 */
+   --white-color: #fff; /* 白 */
+   --border-color: #ddd; /* 区切り線などの色 */
+   --button-hover-primary: #7a3a95; /* ボタンホバー時のメイン紫 */
+}
+
 body {
-    font-family: sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    background-color: #18122B; /* ダークパープルに近い黒 */
-    color: #E0BBE4; /* 薄い紫 */
+   font-family: sans-serif;
+   margin: 0;
+   line-height: 1.6;
+   background-color: var(--background-color);
+   color: var(--text-color);
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
 }
 
 header {
-    background-color: #3A0CA3; /* 濃い紫 */
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+   background-color: var(--white-color);
+   padding: 20px 0;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   position: sticky;
+   top: 0;
+   z-index: 100;
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 24px;
-    color: #F2AFEF; /* 明るい紫 */
+   margin: 0;
+   font-size: 24px;
+   color: var(--primary-color);
 }
 
 header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
 }
 
 header nav ul li {
-    margin-left: 20px;
+   margin-left: 20px;
 }
 
 header nav ul li a {
-    text-decoration: none;
-    color: #E0BBE4; /* 薄い紫 */
-    transition: color 0.3s ease;
+   text-decoration: none;
+   color: var(--light-text-color);
+   transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #F2AFEF; /* 明るい紫 */
+   color: var(--primary-color);
 }
 
 .hero {
-    background-color: #18122B; /* ダークパープルに近い黒 */
-    padding: 100px 0;
-    text-align: center;
+   background-color: var(--white-color);
+   padding: 100px 0;
+   text-align: center;
 }
 
 .hero-content h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    color: #F2AFEF; /* 明るい紫 */
+   font-size: 3em;
+   margin-bottom: 20px;
+   color: var(--primary-color);
 }
 
 .hero-content p {
-    font-size: 1.2em;
-    color: #E0BBE4; /* 薄い紫 */
-    margin-bottom: 30px;
+   font-size: 1.2em;
+   color: var(--light-text-color);
+   margin-bottom: 30px;
 }
 
 .button {
-    display: inline-block;
-    background-color: #9A00FF; /* 鮮やかな紫 */
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+   display: inline-block;
+   background-color: var(--primary-color);
+   color: var(--white-color);
+   padding: 15px 30px;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #7B00CC; /* 少し暗い紫 */
+   background-color: var(--button-hover-primary);
 }
 
 .about {
-    padding: 80px 0;
-    background-color: #27187E; /* 深い青紫 */
+   padding: 80px 0;
+   background-color: var(--background-color);
 }
 
 .about h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #F2AFEF; /* 明るい紫 */
+   font-size: 2.5em;
+   margin-bottom: 30px;
+   text-align: center;
+   color: var(--primary-color);
 }
 
 .about-content {
-    display: flex;
-    gap: 50px;
-    align-items: center;
+   display: flex;
+   gap: 50px;
+   align-items: center;
 }
 
 .profile-image {
-    flex: 1;
-    max-width: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid #9A00FF; /* 鮮やかな紫のボーダー */
+   flex: 1;
+   max-width: 300px;
+   border-radius: 50%;
+   overflow: hidden;
+   border: 5px solid var(--secondary-color); /* プロフィール画像の枠を紫に */
 }
 
 .profile-image img {
-    width: 100%;
-    height: auto;
-    display: block;
+   width: 100%;
+   height: auto;
+   display: block;
 }
 
 .profile-text {
-    flex: 2;
-    color: #E0BBE4; /* 薄い紫 */
+   flex: 2;
 }
 
 .profile-text p {
-    margin-bottom: 15px;
+   margin-bottom: 15px;
+   color: var(--light-text-color);
 }
 
 .works {
-    background-color: #18122B; /* ダークパープルに近い黒 */
-    padding: 80px 0;
+   background-color: var(--white-color);
+   padding: 80px 0;
 }
 
 .works h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #F2AFEF; /* 明るい紫 */
+   font-size: 2.5em;
+   margin-bottom: 30px;
+   text-align: center;
+   color: var(--primary-color);
 }
 
 .works-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 30px;
 }
 
 .work-item {
-    border: 1px solid #3A0CA3; /* 濃い紫のボーダー */
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* より強めの影 */
-    transition: transform 0.3s ease;
-    background-color: #27187E; /* 深い青紫の背景 */
+   border: 1px solid var(--border-color);
+   border-radius: 5px;
+   overflow: hidden;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+   transition: transform 0.3s ease;
 }
 
 .work-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7); /* ホバー時にも強めの影 */
+   transform: translateY(-5px);
 }
 
 .work-item img {
-    width: 100%;
-    height: auto;
-    display: block;
+   width: 100%;
+   height: auto;
+   display: block;
 }
 
 .work-item h3 {
-    padding: 15px;
-    margin: 0;
-    font-size: 1.5em;
-    color: #F2AFEF; /* 明るい紫 */
+   padding: 15px;
+   margin: 0;
+   font-size: 1.5em;
+   color: var(--text-color);
 }
 
 .work-item p {
-    padding: 0 15px 15px;
-    margin: 0;
-    color: #E0BBE4; /* 薄い紫 */
+   padding: 0 15px 15px;
+   margin: 0;
+   color: var(--light-text-color);
 }
 
 .work-item a {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    background-color: #3A0CA3; /* 濃い紫 */
-    color: #F2AFEF; /* 明るい紫 */
-    text-align: center;
-    transition: background-color 0.3s ease;
+   display: block;
+   padding: 10px 15px;
+   text-decoration: none;
+   background-color: var(--background-color);
+   color: var(--primary-color);
+   text-align: center;
+   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .work-item a:hover {
-    background-color: #5C00B8; /* さらに濃い紫 */
+   background-color: var(--secondary-color);
+   color: var(--white-color);
 }
 
 .skills {
-    padding: 80px 0;
-    background-color: #27187E; /* 深い青紫 */
+   padding: 80px 0;
+   background-color: var(--background-color);
 }
 
 .skills h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #F2AFEF; /* 明るい紫 */
+   font-size: 2.5em;
+   margin-bottom: 30px;
+   text-align: center;
+   color: var(--primary-color);
 }
 
 .skills-list ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   flex-wrap: wrap;
 }
 
 .skills-list ul li {
-    background-color: #3A0CA3; /* 濃い紫 */
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    color: #E0BBE4; /* 薄い紫 */
+   background-color: var(--white-color);
+   padding: 10px 20px;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+   color: var(--light-text-color);
+   border: 1px solid var(--secondary-color); /* スキル項目の枠を紫に */
 }
 
 .contact {
-    padding: 80px 0;
-    background-color: #18122B; /* ダークパープルに近い黒 */
+   padding: 80px 0;
+   background-color: var(--white-color);
 }
 
 .contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #F2AFEF; /* 明るい紫 */
+   font-size: 2.5em;
+   margin-bottom: 30px;
+   text-align: center;
+   color: var(--primary-color);
 }
 
 .contact p {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #E0BBE4; /* 薄い紫 */
+   text-align: center;
+   margin-bottom: 30px;
+   color: var(--light-text-color);
 }
 
 .contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #3A0CA3; /* 濃い紫のボーダー */
-    border-radius: 5px;
-    background-color: #27187E; /* 深い青紫の背景 */
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+   border: 1px solid var(--secondary-color); /* フォームの枠を紫に */
+   border-radius: 5px;
+   background-color: var(--background-color);
+}
+
+.form-group {
+   margin-bottom: 20px;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #F2AFEF; /* 明るい紫 */
+   display: block;
+   margin-bottom: 5px;
+   color: var(--text-color);
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
+.form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #5C00B8; /* さらに濃い紫のボーダー */
-    border-radius: 5px;
-    font-size: 1em;
-    background-color: #3A0CA3; /* 濃い紫の背景 */
-    color: #E0BBE4; /* 薄い紫の文字色 */
+   width: 100%;
+   padding: 10px;
+   border: 1px solid var(--border-color);
+   border-radius: 5px;
+   font-size: 1em;
+   color: var(--text-color);
+   background-color: var(--white-color);
 }
 
 .form-group textarea {
-    resize: vertical;
+   resize: vertical;
 }
 
 .contact form .button {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    font-size: 1.1em;
-    text-align: center;
-    background-color: #9A00FF; /* 鮮やかな紫 */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+   display: block;
+   width: 100%;
+   padding: 15px;
+   font-size: 1.1em;
+   text-align: center;
+   background-color: var(--secondary-color); /* コンタクトボタンを明るい紫に */
 }
 
 .contact form .button:hover {
-    background-color: #7B00CC; /* 少し暗い紫 */
+   background-color: var(--primary-color);
 }
 
 footer {
-    background-color: #3A0CA3; /* 濃い紫 */
-    color: #F2AFEF; /* 明るい紫 */
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9em;
+   background-color: var(--primary-color);
+   color: var(--white-color);
+   text-align: center;
+   padding: 20px 0;
+   font-size: 0.9em;
 }
 
 footer .container {
-    padding: 0 20px;
+   padding: 0 20px;
 }
 
 /* レスポンシブデザイン */
 /* @media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+   header .container {
+       flex-direction: column;
+       align-items: flex-start;
+   }
 
-    header h1 {
-        margin-bottom: 10px;
-    }
+   header h1 {
+       margin-bottom: 10px;
+   }
 
-    header nav ul {
-        flex-direction: column;
-    }
+   header nav ul {
+       flex-direction: column;
+   }
 
-    header nav ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
+   header nav ul li {
+       margin-left: 0;
+       margin-bottom: 10px;
+   }
 
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
+   .about-content {
+       flex-direction: column;
+       text-align: center;
+   }
 
-    .profile-image {
-        max-width: 200px;
-        margin: 0 auto 20px;
-    }
+   .profile-image {
+       max-width: 200px;
+       margin: 0 auto 20px;
+   }
 
-    .skills-list ul {
-        justify-content: flex-start;
-    }　*/
+   .skills-list ul {
+       justify-content: flex-start;
+   } */
 }
