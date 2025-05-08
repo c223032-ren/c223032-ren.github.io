@@ -1,244 +1,52 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>れんたろうのポートフォリオ</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Noto Sans JP', sans-serif; /* フォントを変更 */
-            font-size: 16px; /* 基本のフォントサイズを大きく */
-            background-color: #f0e6d2;
-            color: #a0522d;
-            margin: 0;
-            padding: 0;
-            line-height: 1.7; /* 行間を少し広げて読みやすく */
-        }
-
-        header {
-            background-color: #a0522d;
-            color: #fff;
-            padding: 25px 0; /* 少し上下のpaddingを大きく */
-            text-align: center;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav li {
-            margin: 0 25px; /* 左右のmarginを少し大きく */
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.1em; /* ナビゲーションリンクの文字を少し大きく */
-            font-weight: bold; /* 少し太く */
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 30px auto; /* 上下のmarginを少し大きく */
-            padding: 25px; /* paddingを少し大きく */
-            background-color: #f0e6d2;
-            border: 5px solid #a0522d;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, {
-            color: #f0e6d2;
-            margin-bottom: 15px;
-            font-weight: 700;
-
-        }
-        
-        h2, h3 {
-            color: #a0522d;
-            margin-bottom: 15px; /* margin-bottomを少し大きく */
-            font-weight: 700; /* 少し太めのウェイトを指定 */
-        }
-
-        h1 {
-            font-size: 2.5em; /* h1をさらに大きく */
-        }
-
-        h2 {
-            font-size: 2em; /* h2を大きく */
-        }
-
-        h3 {
-            font-size: 1.5em; /* h3を少し大きく */
-        }
-
-        .profile p, .recent-activity li, .projects li {
-            margin-bottom: 20px; /* margin-bottomを少し大きく */
-            padding-left: 1.2em; /* padding-leftを少し調整 */
-            text-indent: -1.2em; /* text-indentを少し調整 */
-            font-size: 1.1em; /* 段落などの文字を少し大きく */
-        }
-
-        .projects ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .project-item {
-            border: 3px solid #a0522d;
-            padding: 20px; /* paddingを少し大きく */
-            margin-bottom: 20px; /* margin-bottomを少し大きく */
-            background-color: #f0e6d2;
-            border-radius: 5px; /* 角を少し丸く */
-           /* border: 5px double #a0522d; /* 二重線ボーダー */
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .project-item h3 {
-            margin-top: 0;
-        }
-
-        .project-item p {
-            font-size: 1em; /* プロジェクト詳細の文字サイズも調整 */
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px 0; /* paddingを少し大きく */
-            background-color: #333;
-            color: #fff;
-           /* position: fixed;
-            bottom: 0;
-            width: 100%;
-            font-size: 0.9em; /* フッターの文字は少し小さく */
-            position: static; /* または position: relative; */
-            text-align: center;
-            padding: 15px 0;
-            background-color: #333;
-            color: #fff;
-            width: 100%;
-        }
-
-        .recent-activity li {
-            margin-bottom: 20px;
-            padding-left: 0; /* 不要になったので削除 */
-            text-indent: 0; /* 不要になったので削除 */
-            font-size: 1.1em;
-            display: flex; /* Flexboxを指定 */
-            align-items: flex-start; /* 上揃え */
-        }
-
-        .recent-activity li iframe {
-            margin-left: 1em; /* 動画とテキストの間にスペースを作る */
-        }
-        
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ポートフォリオ - あなたの名前</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>はすをだよ</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">ホーム</a></li>
-                <li><a href="#about">このサイトについて</a></li>
-                <li><a href="#works">活動一覧</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="container" id="home">
-        <section class="title">
-            <h2>どうも</h2>
-            <p>れんたろうです。</p>
-        </section>
-
-        <section class="profile">
-            <h2>プロフィール</h2>
-            <img src="https://github.com/user-attachments/assets/25b0448d-fa1c-4282-8e6f-99a14dfc7318" alt="ドンキーと私" style="display: block; margin-bottom: 5px; width: auto; height: 500px; border-radius: 20%; margin-left: auto; margin-right: auto;">
-             <p style="text-align: center;">Geminiが助けてくれました</p>
-             <p style="text-align: center;">AI有能すぎる</p>
-        </section>
-
-        <section class="recent-activity">
-            <h2>最近の活動</h2>
-            <ul>
-                <li>[YYYY年MM月DD日] - [最近の活動内容1]</li>
-                <li>[YYYY年MM月DD日] - [最近の活動内容2]</li>
-                <li>[YYYY年MM月DD日] - [最近の活動内容3]</li>
-            </ul>
-        </section>
-
-        <section class="projects">
-            <h2>現在のプロジェクト</h2>
-            <ul>
-                <li class="project-item">
-                    <h3>卒業制作</h3>
-                    <p>まだ何も決まっていない、、、、</p>
-                    <p>ちっさいゲームいっぱい作るかも</p>
-                </li>
-                <li class="project-item">
-                    <h3>[プロジェクト名2]</h3>
-                    <p>[プロジェクトの簡単な説明]</p>
-                    <p>担当：[あなたの担当]</p>
-                    <p>進捗：[進捗状況]</p>
-                </li>
-                </ul>
-        </section>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- ヒーローセクション -->
+  <header class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 to-purple-500 text-white">
+    <div class="text-center px-4">
+      <h1 class="text-5xl font-bold mb-4">こんにちは、<span class="underline decoration-white">あなたの名前</span>です</h1>
+      <p class="text-xl mb-6">フロントエンド開発者・UIデザイナー</p>
+      <a href="#projects" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">プロジェクトを見る</a>
     </div>
+  </header>
 
-    <div class="container" id="about" style="display: none;">
-        <section>
-            <h2>このサイトについて</h2>
-            <p>このポートフォリオサイトでは、私のこれまでの活動や制作実績についてまとめたいです</p>
-            <p>果たして追加されるのか</p>
-        </section>
+  <!-- 自己紹介 -->
+  <section class="max-w-4xl mx-auto py-20 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">自己紹介</h2>
+    <p class="text-lg leading-relaxed text-gray-600">
+      Web制作・フロントエンド開発を中心に活動しています。ReactやNext.jsを使ったSPA開発が得意で、UI/UXにもこだわっています。
+    </p>
+  </section>
+
+  <!-- プロジェクト -->
+  <section id="projects" class="bg-white py-20 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">プロジェクト</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">プロジェクト名 A</h3>
+          <p class="text-gray-600 mb-2">React + Firebaseで構築したTODOアプリ。</p>
+          <a href="#" class="text-indigo-600 font-medium hover:underline">詳細を見る</a>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">プロジェクト名 B</h3>
+          <p class="text-gray-600 mb-2">Next.jsとmicroCMSを活用したブログサイト。</p>
+          <a href="#" class="text-indigo-600 font-medium hover:underline">詳細を見る</a>
+        </div>
+        <!-- 追加可能 -->
+      </div>
     </div>
+  </section>
 
-    <div class="container" id="works" style="display: none;">
-        <section>
-            <h2>活動一覧</h2>
-            <p>これまでのゼミ活動です</p>
-            <ul>
-                <li>研修旅行のゼミブログ - <iframe width="560" height="315" src="https://www.youtube.com/embed/UNJqWvjGa4Y?si=PP3XFf7X2abj1pEj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
-                <li>[プロジェクト名] - [簡単な説明] ([使用技術])</li>
-                </ul>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; Hasuo All Rights Reserved.</p>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('nav a');
-            const containers = document.querySelectorAll('.container');
-
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(event) {
-                    event.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-
-                    containers.forEach(container => {
-                        container.style.display = 'none';
-                    });
-
-                    const targetContainer = document.getElementById(targetId);
-                    if (targetContainer) {
-                        targetContainer.style.display = 'block';
-                    }
-                });
-            });
-
-            // 初期表示でホームを表示
-            document.getElementById('home').style.display = 'block';
-        });
-    </script>
+  <!-- フッター -->
+  <footer class="text-center py-10 text-sm text-gray-500">
+    © 2025 あなたの名前. All rights reserved.
+  </footer>
 </body>
 </html>
